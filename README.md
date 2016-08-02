@@ -6,6 +6,7 @@ This is a basic wtf per minute counter.
 To build run
 
 	mkdir build
+	cd build
 	qmake ../
 	make
 
