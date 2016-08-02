@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <chrono>
 #include <QTimer>
+#include <vector>
 
 namespace Ui {
 class MainWindow;
@@ -28,7 +29,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    int wtfs;
+    std::vector<std::chrono::system_clock::time_point> wtfs;
     std::chrono::system_clock::time_point start;
     QTimer* timer;
 
